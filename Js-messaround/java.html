@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Demo</title>
+</head>
+<style>
+    <style>#changeHeight {
+        width: 200px;
+        background-color: lightblue;
+        text-align: center;
+        padding: 20px;
+    }
+</style>
+</style>
+
+<body>
+    <h1>lets learn java script</h1>
+    <h2>how do we do on click events and alerts on an anchor</h2>
+    <a href="https://www.eastsideprep.org/" target="_blank"
+        onclick="alert('warning you are navigating away from my site')">East side prep</a>
+
+    <h2>Whats my secret identity?</h2>
+    <p id="secret"></p>
+    <button
+        onclick="document.getElementById('secret').innerHTML='nana nana nana nana nana batman'; docuemnt.getElemntById('secret').style.display='block'">Reveal!</button>
+    <button onclick="document.getElementById('secret').style.display='none'">Hide!</button>
+
+    <h2>how do we change an image with JS</h2>
+    <img id="bulb" src="/Js-messaround/Images2/pic_bulboff.gif" alt="bulb is off">
+    <button onclick="document.getElementById('bulb').src ='Images2/pic_bulbon.gif'">Turn on light</button>
+    <button onclick="document.getElementById('bulb').src ='Images2/pic_bulboff.gif'">Turn off light</button>
+
+
+    <h2>How do we change css styles with a button</h2>
+    <p id="alice">Hi I am Alice</p>
+    <button
+        onclick="document.getElementById('alice').style.color='blue' ; document.getElementById('alice').style.fontSize='5px' ;">Cake:
+        Eat me</button>
+
+
+    <h2>How do we reutrn user input</h2>
+    <button onclick="askname()">Whats your name</button>
+    <p id="ask name"></p>
+
+
+
+    <script>
+        function askname() {
+            let nameParagrpah = document.getElementById('askname');
+            let name = prompt('what is your name?');
+            if (name == "batman") {
+                nameParagrpah = "Welcome to the batcave sir";
+
+            } else {
+                nameParagrpah.innerHTML = "Hello " + name;
+            }
+        }
+    </script>
+    <div id="content" style="background-color: lightblue; padding: 20px;">
+        The background color will change here.
+    </div>
+
+    <button id="changeColorButton">Change Background Color</button>
+
+    <script>
+        // Get the button and content element by their IDs
+        const button = document.getElementById('changeColorButton');
+        const content = document.getElementById('content');
+
+        // Define an array of color options
+        const colors = ["lightblue", "lightgreen", "lightcoral", "lightyellow"];
+
+        // Function to change the background color
+        function changeBackgroundColor() {
+            // Get a random color from the array
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+            // Set the background color of the content element
+            content.style.backgroundColor = randomColor;
+        }
+
+        // Add a click event listener to the button
+        button.addEventListener('click', changeBackgroundColor);
+    </script>
+
+    <div id="changeHeight">
+        This will adjust the height
+    </div>
+
+    <label for="newHeight">New Height (in pixels):</label>
+    <input type="number" id="newHeight">
+    <button id="setHeightButton">Set Height</button>
+
+    <script>
+        const changeHeightDiv = document.getElementById('changeHeight');
+        const newHeightInput = document.getElementById('newHeight');
+        const setHeightButton = document.getElementById('setHeightButton');
+
+        setHeightButton.addEventListener('click', () => {
+            const newHeight = newHeightInput.value;
+            changeHeightDiv.style.height = newHeight + 'px';
+        });
+    </script>
+
+
+</body>
+
+</html>
