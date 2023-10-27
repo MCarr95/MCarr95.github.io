@@ -38,8 +38,8 @@
 
 
 
-<p id="truths-answer"></p>
-    <form id="radioForm">
+    <p id="truths-answer"></p>
+    <form id="radioForm" action="">
         <label>
             <input type="radio" name="options" value="option1" checked id="option1"> I have gone swimming with sharks
         </label>
@@ -53,21 +53,9 @@
         <input type="radio" name="options" value="option3" id="option3"> I have 2 dogs
         </label>
         <br>
-        <input type="submit" value="Submit" onclick="truths()">
+
     </form>
-
-    <script>
-        // JavaScript code to handle form submission
-        document.getElementById('radioForm').addEventListener('submit', function (event) {
-            event.preventDefault(); // Prevent the default form submission
-
-            // Get the selected radio option
-            const selectedOption = document.querySelector('input[name="options"]:checked').value;
-
-            // Display the selected option in an alert
-            alert('Selected option: ' + selectedOption);
-        });
-    </script>
+    <input type="submit" value="Submit" onclick="truths()">
 
 
     <script src="js/game.js"></script>
