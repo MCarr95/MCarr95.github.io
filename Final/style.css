@@ -1,0 +1,43 @@
+h1 {
+    font-family: "adorn-bouquet", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: "nori", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+img {
+    border-style: solid;
+    border-color: aqua;
+}
+
+nav {
+    border-style: solid;
+    border-color: aqua;
+}
+
+p {
+    font-size: x-large;
+}
+
+h1 {
+    font-size: xx-large
+}
+
+img {
+    border-style: solid;
+    border-color: aqua;
+}
+
+nav {
+    border-style: solid;
+    border-color: aqua;
+}
+
+.container {
+    background-color: beige
+}

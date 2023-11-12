@@ -1,11 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <link rel="stylesheet" href="https://use.typekit.net/ujf6lrt.css" href="https://use.typekit.net/ujf6lrt.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/Final/style.css">
 </head>
+
 <body>
-    
+    <nav class="navbar bg-light">
+
+        <div class="container-fluid">
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/Final/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Final/contact.html">Contact</a>
+                </li>
+            </ul>
+            <a class="navbar-brand" href="#">
+                <img src="/Final/Images/logo real.jpg" alt="T" style="width:200px;" class="rounded-pill">
+            </a>
+
+        </div>
+
+    </nav>
+
+    <div class="container p-5 m-5 mx-auto border">
+        <div class="row">
+            <div class="col-md-5">
+                <h1>About Us!</h1>
+                <p>We are Madison Park Bakerey and we have been serving this community since 1929 come on in and order
+                    some delicous goods</p>
+                <img src="/Final/Images/Store front.jpg" alt="storefront" widt="200" height="200">
+            </div>
+            <div class="col-md-3">
+                <h1>New Ownership!</h1>
+                <p>Less than a year ago we changed ownership. We were a family owned buisness but now we are owned by
+                    diffiernt people who aded more pastrys, baked goods, sandwiches and more.</p>
+                <img src="/Final/Images/sandwiches.jpg" alt="sandwiches" width="200" height="200">
+            </div>
+            <div class="col-md-4">
+                <h1>Competition</h1>
+                <p>We are in of two bakereys in madison park and we sell the same things so please come and support our
+                    bakerey by ordering cakes or just coming in buying a donut or cookie. Our competitor:</p>
+                <img src="/Final/Images/Competition.png" alt="Competition" width="300" height="300">
+            </div>
+
+        </div>
+    </div>
+    <h1>Welcome to name quiz. Enter the corret name of the neihgboorhood it is in and year it was founded</h1>
+    <hr>
+    <h2>Quiz</h2>
+    <form action="" id="name-form">
+        <label for="fname">First word of neihgboorhood;</label>
+        <input type="text" name="fname" id="fname">
+        <label for="lname">Second word of neihgboorhood;</label>
+        <input type="text" name="lname" id="lname">
+        <label for="Age">Year it was founded;</label>
+        <input type="text" name="Age" id="Age">
+
+    </form>
+    <br>
+    <input type="button" value="SUBMIT" onclick="greet()">
+    <p id="greet" style="font-size: x-large">Welome!</p>
+
+
+    <script src="/Final/game.js"></script>
+
+
+    <footer style="text-align: center; color: aqua;">
+
+        <h6 class="centering">Created by Maddox Carr</h6>
+
+
+    </footer>
+
+
 </body>
+
 </html>
